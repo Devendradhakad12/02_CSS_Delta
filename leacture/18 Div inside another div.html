@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>18 Div inside another div</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: grid;
+            place-items: center;
+            height: 100vh;
+            width: 100%
+        }
+        .outer_div{
+            background-color: red;
+            height: 70vh;
+            width:60vw ;
+            /* first way */
+            /* display: grid;
+            place-items: center; */
+
+            /* second way */
+            /* display: flex;
+            justify-content: center;
+            align-items: center; */
+
+            /*third way*/
+            position: relative;
+        }
+        .inner_div{
+            background-color: blue;
+            height: 50%;
+            width: 30%;
+
+            /*third way*/
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+
+
+        }
+    </style>
+</head>
+<body>
+    <div class="outer_div">
+        <div class="inner_div">
+
+        </div>
+    </div>
+</body>
+</html>

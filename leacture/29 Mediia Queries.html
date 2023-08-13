@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>29 Media Queries</title>
+    <style>
+        h1{
+            background-color: yellowgreen;
+            color: black;
+            border: 2px solid black;
+            transition: all 0.3s;
+        }
+     /*    @media screen and (min-width:200px) and (max-width:300px){
+            h1{
+                background-color: aqua;
+            }
+        }  */
+            
+        
+        @media screen and (max-width:413px){
+            h1{
+                background-color: red;
+                color: white;
+                text-align: center;
+            }
+        }
+        @media only screen and (orientation:landscape) {
+            h1{
+                background-color: blue;
+                color: white;
+            }
+        }
+    </style>
+</head>
+<body>
+    Media Queries -> Help create a responsive website.
+    media features - width(of viweport)
+    @media screen and (max-width:400px){
+        h1{
+            background-color: red;
+        }
+    }
+    <h1>hello media</h1>
+</body>
+</html>

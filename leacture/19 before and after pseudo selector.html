@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>19 before and after pseudo selector</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        .main_div{
+            width: 100vw;
+            height: 100vh;
+            background-color: rgb(2, 70, 48);
+            display: grid;
+            place-items: center;
+
+        }
+        h1{
+            color: antiquewhite;
+            text-shadow: 2px 4px 15px rgb(241, 2, 2);
+            position: relative;
+            text-align: center;
+        }
+        h1::before{
+            content: "";
+            position: absolute;
+            height: 3px;
+            width: 100%;
+            background-color: antiquewhite;
+            top: -40%;
+            left: 0;
+        }
+        h1::after{
+            content: "";
+            position: absolute;
+            height: 3px;
+            width: 100%;
+            background-color: antiquewhite;
+            bottom: -40%;
+            left: 0;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main_div">
+        <h1>Devendra dhakad</h1>
+    </div>
+</body>
+</html>

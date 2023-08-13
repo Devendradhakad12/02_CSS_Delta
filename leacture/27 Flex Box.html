@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        .container{
+            border: 2px solid black;
+            margin: 30px auto;
+            height: 300px;
+            width: 80%;
+            display: flex;
+            /* flex-direction: row-reverse;
+            justify-content: flex-end;
+            justify-content: space-between;
+            justify-content: space-evenly;
+            justify-content: space-around;
+            flex-wrap: wrap-reverse;
+            align-items: baseline; */
+          
+            align-content: flex-start;
+         
+
+        }
+        .container div{
+            height: 100px;
+            width: 50px;
+            text-align: center;
+            margin: 3px;
+            border: 2px solid black;
+        }
+      .container #last{
+        align-self: center; 
+            /*  flex-basis: 300px;  */
+        }
+        #blu{
+            flex-grow: 1;
+            min-width: 100px;
+        }
+    </style>
+</head>
+<body>
+   <p style="font-size: 19px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 30px;">
+    Flex Box -> It is a one-dimensional layout method for arranging items in rows or columns.<br>
+    Flexbox direction -> it sets how flex items are placed in the flex container, along which axis and direction.<br>
+    flex-direction -> row, row-reverse, column, column-reverse.<br>
+    justify-content -> Tells how the browser distribute spacce between and around content items along the main-axis.<br>
+    justify-content -> flex-start, flex-end , center, space-between, space-around, space-evenly.<br>
+    flex wrap -> Sets whether flex items are forced onto one line or can wrap onto multiple lines.<br>
+    flex-wrap -> nowrap, wrap, wrap-reverse. <br>
+    align-items -> Distributes our items along the cross axis.<br>
+    align-items -> flex-start, flex-end , center, baseline <br>
+     align-content -> it sets the distribution of space between and around content items along a flexbox's cross-axis. <br>
+     align-content -> flex-start, flex-end , center, baseline , space-between, space-around, space-evenly. <br>
+     Align self -> aligns an item along the cross axis.<br>
+     align-self ->  flex-start, flex-end , center, baseline.  <br>
+     flext sizing (flex basis) -> it sets the initial main size of a flex item. <br>
+     flex-basis:100px;<br>
+     flex sizing (flex grow) -> it specifies how much of the flex container's remaining space should be assigned to the flex item's main size.<br>
+     flex-grow:1;<br>
+     flex-shrink -> it sets the flex shrink factor of a flex item. <br>
+     flex-shrink:1;<br>
+
+     Flex Shorthand ->1. flex: grow | flex-shrink | flex-basis;<br>
+                         flex:2 2 100px; <br>
+                      2. flex- grow | flex-basis. <br>
+                      3. flex-grow(unitless) <br>
+                      4. flex-basis <br>
+
+   </p>
+    <h1>Flexbox playground</h1>
+    <div class="container">
+        <div style="background-color: red;">red</div>
+        <div style="background-color: green;">green</div>
+        <div style="background-color: blue;">blue</div>
+        <div style="background-color: orange;">orange</div>
+        <div style="background-color: yellow;">yellow</div>
+        <div style="background-color: blue;" id="blu">blue</div>
+        <div style="background-color: green;" id="last">green</div>
+    </div>
+</body>
+</html>

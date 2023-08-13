@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clip path</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        body{
+            height: 100vh;
+            width: 100%;
+            background-color: rgb(118, 191, 243);
+            display: grid;
+            place-items: center;
+        }.main_div{
+            height: 250px;
+            width: 400px;
+            background-color: blue;
+            color: white;
+            clip-path: circle(19.5% at 100% 0);
+            padding: 30px;
+            cursor: pointer;
+            border-radius: 10px;
+           transition: all 0.6s;
+        }
+        .main_div h1{
+            margin: 0px 20px;
+        }
+        .main_div p{
+            
+            padding: 20px;
+        }
+     .main_div:hover{
+        clip-path: circle(141.4% at 100% 0);
+     }
+    </style>
+</head>
+<body>
+    Clip path -> circle,ellips,inset,polygon
+    <div class="main_div">
+        <h1>This is heading</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur earum temporibus, reprehenderit dolores quaerat ratione necessitatibus aspernatur a eos nihil.</p>
+    </div>
+</body>
+</html>

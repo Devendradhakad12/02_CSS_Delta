@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selection selector</title>
+    <style>
+        /* universal selection*/
+        ::selection{
+            background-color: green;
+        }
+        p::selection{
+            background-color: yellow;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Selection selector</h1>
+<p>    Selection selector ->  The selection selector is matches the portion of an element thatt is selected by a user </p>
+    <p>Note :> Only few properties can applied to a selection ::selector : color, backgroundColor, cursor, and outline</p>
+</body>
+</html>

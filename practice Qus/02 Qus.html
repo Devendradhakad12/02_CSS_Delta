@@ -1,0 +1,72 @@
+<!--             CSS(Part1)
+         Practice Questions
+We are going to write CSS for the following code:
+(Please copy-paste or re-write this code in your HTML file) -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>CCS Assignment-1</title>
+    <style>
+        body{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        .poem{
+         color: #970000;
+         line-height: 30px;
+        } 
+        .center{
+            text-align: center;
+        }
+        .ancho_wiki{
+         text-decoration: none;
+         color: rgb(0, 131, 0);
+        }
+        button{
+            background-color: white;
+            color: blueviolet;
+        }
+        textarea{
+            color: #000000;
+        }
+         
+    </style>
+</head>
+
+<body style="background-color: wheat;">
+    <!--PoemName-->
+    <h1 class="poem_head center">Ozymandias</h1>
+    <!--Poet'sName-->
+    <h3 class="center">byPercyByssheShelley</h3>
+    <!--Poem-->
+    <p class="poem center" id="poem">
+        I met a travellerfromanantiqueland,<br/>
+        Whosaid—“Twovastandtrunklesslegsofstone<br/>
+        Standinthedesert....Nearthem,onthesand,<br/>
+        Halfsunkashatteredvisagelies,whosefrown,<br/>
+        Andwrinkledlip,andsneerofcoldcommand,<br/>
+        Tellthatitssculptorwellthosepassionsread<br/>
+        Whichyetsurvive,stampedontheselifelessthings,<br/>
+        Thehandthatmockedthem,andtheheartthatfed;<br/>
+        Andonthepedestal,thesewordsappear:<br/>
+        Mynameis  <span style="text-decoration: underline;">Ozymandias</span>,KingofKings;<br/>
+        LookonmyWorks,yeMighty,anddespair!<br/>
+        Nothingbesideremains.Roundthedecay<br/>
+        OfthatcolossalWreck,boundlessandbare<br/>
+        Theloneandlevelsandsstretchfaraway.”<br/>
+    </p>
+    <hr/>
+<div class="center">
+    <h4 class="center"> Read up more about the poem on <a class="ancho_wiki" href="https://en.wikipedia.org/wiki/Ozymandias">Wikipidia</a> </h4>
+    <textarea placeholder="Leave your comments here" class="center"></textarea>   
+    <br><br>
+    <button class="center">comment</button>
+</div>
+ 
+     </body>
+
+</html>

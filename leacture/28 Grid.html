@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>28 Grid</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        .container{
+            width: 600px;
+            height: 300px;
+            background-color: rgb(29, 38, 38);
+            display: grid;
+           margin: auto;
+            grid-template-columns: 1fr 1fr 1fr;  /* (auto auto auto) , (100px 100px) , repeat(count,1fr) */
+            grid-template-rows: 1fr 1fr 1fr; /* (auto auto auto ) , (100px 100px) , repeat(4,1fr) */
+            place-items: center;
+             grid-row-start: 2;
+             grid-column-start: 3;
+             
+        }
+        .item{
+            width: 140px;
+            height: 50px;
+            background-color: aqua;
+            border: 2px solid black;
+            display: grid;
+            place-items: center;
+            font-size: 30px;
+            
+        }
+        .one{
+         /*    grid-column-start:2;
+            grid-column-end: 5; */
+           /*  grid-column: 1 / span 4;
+            grid-row: 1 / span 3; */
+        }
+    </style>
+</head>
+<body>
+    Note -> Grid ka use tabhi krte  he jb hme row or column dono bnane ho yani 2d layout bnana ho, normaly hm flex box ka use krte h.
+    Note -> Grid is always used when we have to make row and column that is to make 2D layout, normally flex box is used.
+    CSS Grid -> Setting a container's display to grid will make all childern grid items. 
+
+    Grid template -> They define the lines & track sizing. 
+    grid-template-rows:(100px 100px) ,( auto,auto);
+    grid-template-columns:(100px 100px) , ( auto,auto);
+    ------Repeat is used to divide all available space.
+    grid-template-rows:reapeat(count,1fr) , repeat(2,1fr);
+    grid-template-columns:reapeat(count,1fr) , 1fr 1fr; <!--! 1frection -->
+
+    grid-gap -> They define the gaps between the lines.
+    row-gap:10px;
+    column-gap:20px;
+    grid-gap:row column;
+
+    Grid Columns -> Defines an item's starting & ending position inside the column. 
+    grid-column-start:line_number;
+    grid-column-end:line_number;
+    grid-column:start_col/end_col;
+    grid-column:start_col/span number;
+
+    Grid rows -> Defines an item's starting & ending position inside the rows. 
+    grid-rows-start:line_number;
+    grid-rows-end:line_number;
+    grid-rows:start_col/end_col;
+    grid-rows:start_col/span number;
+  
+    -------Horizontal align
+      justify-items:start,end,center;(container)
+      justify-self:end,start;(item)
+    
+    -------vertical align
+        align-items:start,end,center;(container)
+        align-self:end,start;(item)
+
+        -----both Horizontal & vertical align
+        place-items:start,end,center;(container)
+        place-self: align-self:end,start;(item)
+
+
+        Display grid like inline element -> display:inline-grid;
+if we want to display grid container as a inline then we use inline grid
+
+
+    <h1>Grid Playground</h1>
+    <div class="container">
+        <div class="item one">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+    </div>
+</body>
+</html>

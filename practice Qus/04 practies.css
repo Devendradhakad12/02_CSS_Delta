@@ -1,0 +1,9 @@
+div.greetDiv .greet{
+    color: green;
+}
+.greetDiv p.greet{
+    color: blue;
+}
+.greetdiv .greet{
+color: red;
+}

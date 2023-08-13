@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>22 transform</title>
+    <style>
+        div{
+            height: 50px;
+            width: 300px;
+            border-radius: 3px;
+            border: 2px solid black;
+            margin: 55px auto;
+            background-color: yellow;
+            text-align: center;
+
+        }
+        div:nth-of-type(2n){
+            background-color: red;
+        }
+        div:nth-of-type(3n){
+            background-color: green;
+        }
+        .div1{
+            transform: rotate(13deg);
+        }.div2{
+            transform: skew(234deg);
+        }.div3{
+            transform: scale(1.2);
+        }.div4{
+            transform: translateX(90px);
+        }.div5{
+            transform: matrix(-0.9, 1, -0.3, 1, 0, 0);
+        }.div6{
+            transform: translateX(190px) rotate(13deg);
+        }
+    </style>
+</head>
+<body>
+    Transform -> This property lets you rotate,scale,skew or translate an element.
+    <div class="div1">rotate</div>
+    <div class="div2">skew</div>
+    <div class="div3">scale</div>
+    <div class="div4">translate</div>
+    <div class="div5">matrix</div>
+    <div class="div6">rotate translate</div>
+    
+</body>
+</html>

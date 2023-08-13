@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>21 Transitions</title>
+    <style>
+        div{
+      height: 300px;
+      width: 300px;
+      background-color: green;
+      animation: colo 5s linear infinite;
+      transition: all 5s;
+        }
+        @keyframes colo {
+            0%{
+                background-color: green;
+                border-radius: 20%;
+            }
+            50%{
+                background-color: red;
+                border-radius: 30%;
+            }
+            70%{
+                background-color: aqua;
+                border-radius: 50%;
+            }
+            100%{
+                background-color: green;
+                border-radius: 20%;
+            }
+        }
+    </style>
+</head>
+<body>
+    Transitions -> Transitions enable you to define the transition between two states of an element.
+    transition-name,
+    transition-duration,
+    transition-timing-function
+    transition-delay
+    <div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,12 @@
+:root{
+    --Bgcolor:red;
+    --color:rgb(0, 0, 0);
+}
+div{
+    background-color: var(--Bgcolor);
+    color: var(--color);
+}
+h1{
+    background-color: var(--color);
+    color: var(--Bgcolor);
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>25 position property</title>
+    <style>
+        body{
+            height: 100vh;
+            width: 100%;
+
+        }
+       
+        div{
+            border: 2px solid black;
+            margin: 5px;
+            height: 100px;
+            width: 100px;
+            background-color: green;
+            display: inline-block;
+            text-align: center;
+        }
+        .static{
+            background-color: yellow;
+            position: static;
+            top: 100px;
+            left: 100px;
+        }
+        .relative{
+            background-color: yellow;
+            position: relative;
+            top: 50px;
+            left: 50px;
+        }
+        .absolute{
+            background-color: yellow;
+            position: absolute;
+            top: 70px;
+            left: 150px;
+        }
+        .fixed{
+            background-color: rgb(13, 0, 255);
+            position: fixed;
+            top: 70px;
+            left: 150px;
+        }
+    </style>
+</head>
+<body>
+    position -> The position css property sets how an element is positional in a document. The top,right,bottom and left properties detrmine the final location of positioned elements.
+    position -> static, relative,absolute ,fixed,sticky
+    static -> The top,right,bottom,left and z-index properties have no effect. This is the  default value.
+    relative -> The offset is relative to itself based on the values of top,right,bottom and left.
+    absolute -> The element is removed from the normal document flow,and no spaces is created for the element in the page layout.
+                 It is positioned relative to its colset positioned ancestor, if any;othewise,it is placed relative to the initial contaning block.
+    Fixed -> The element is removed from the normal document flow,and no spcace is created for the element in the page layout.
+            it is positioned relative to the intial contaning block establish by the viewport.             
+    <section>
+        <h2>Static Demo: </h2>
+        <div>Exp-> staic</div>
+        <div class="static">static box</div>
+
+        <h2>relative Demo: </h2>
+        <div>Exp-> relative</div>
+        <div class="relative">relative box</div>
+        <div>third div </div>
+
+        <h2>absolute Demo: </h2>
+        <div>Exp-> absolute</div>
+        <div class="absolute">absolute box</div>
+        <div>third div</div>
+
+        <h2>fixed Demo: </h2>
+        <div>Exp-> Fixed</div>
+        <div class="fixed">fixed box</div>
+        <div>third div</div>
+    </section>
+</body>
+</html>
