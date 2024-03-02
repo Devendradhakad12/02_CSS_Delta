@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Card hover</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+        background: rebeccapurple;
+      }
+      .card {
+        position: relative;
+        width: 300px;
+        height: 150px;
+        border-radius: 20px;
+        box-shadow: 5px 5px 20px black;
+        transition: all 0.5s;
+        padding: 20px 40px;
+        background-color: white;
+        cursor: pointer;
+      }
+      .card:hover {
+        height: 300px;
+      }
+
+      .image_box {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        transform: translateY(-70px);
+        z-index: 99;
+      }
+      img {
+        width: 100%;
+        border-radius: 20px;
+      }
+      .content {
+        text-align: center;
+        transform: translateY(-430px);
+        padding: 10px 10px;
+        opacity: 0;
+        transition: all 0.6s;
+        color: rebeccapurple;
+      }
+      .card:hover > .content {
+        opacity: 1;
+        transform: translateY(-160px);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="image_box">
+        <img
+          src="https://media.istockphoto.com/id/1146517111/photo/taj-mahal-mausoleum-in-agra.jpg?s=612x612&w=0&k=20&c=vcIjhwUrNyjoKbGbAQ5sOcEzDUgOfCsm9ySmJ8gNeRk="
+        />
+      </div>
+      <div class="content">
+        <h2>This is heading</h2>
+        <p>
+          Lorem ipsum dolor s inventore deserunt delectus optio in fugiat quis
+          modi numquam, eum, sed consequuntur! Consequuntur quis doloremque sed!
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

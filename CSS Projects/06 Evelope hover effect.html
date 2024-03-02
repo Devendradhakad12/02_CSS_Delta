@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>envelope hover</title>
+    <style>
+          *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;     
+           }
+           body{
+            height: 100vh;
+            background-color: rgb(139, 195, 242);
+            display: grid;
+            place-items: center;
+           }
+           .log{
+            text-decoration: none;
+            color: rgb(255, 253, 253);
+            background-color: rgb(93, 0, 255);
+            font-size: 38px;
+            padding: 10px 20px;
+          
+            transition: all 0.2s;
+            position: relative;
+           
+           }
+           .log::before{
+            content:"Devendra";
+            position: absolute;
+           top: 0;
+           left: 0;
+            color: rgb(255, 253, 253);
+            background-color: rgb(255, 0, 8);
+            font-size: 38px;
+             padding: 10px 20px;
+             transform-origin: top;
+            transition: all 1.5s;
+          
+           }
+           .log:hover::before{
+            opacity: 1;
+            transform: rotateX(270deg);
+           }
+           .log::after{
+            content:"Devendra";
+            position: absolute;
+           bottom: 0;
+           left: 0;
+            color: rgb(255, 253, 253);
+            background-color: rgb(230, 0, 255);
+            font-size: 38px;
+             padding: 10px 20px;
+             transform-origin: bottom;
+            transition: all 1.5s;
+            transition-delay: 0.8s;
+          
+           }
+           .log:hover::after{
+            opacity: 1;
+            transform: rotateX(-270deg);
+           }
+    </style>
+</head>
+<body>
+    <a href="#" class="log">Devendra</a>
+</body>
+</html>

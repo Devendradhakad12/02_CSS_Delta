@@ -1,1 +1,1 @@
-# 02_CSS_Delta
+# 02 CSS Lecture
